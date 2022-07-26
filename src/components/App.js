@@ -40,22 +40,12 @@ class App extends Component {
   }
   
   render() {
-    let list = document.getElementsByTagName('ol');
-    console.log( list );
-let k =0;
+//     let list = document.getElementsByTagName('ol');
+//     console.log( list );
+// let k =0;
     return (
       <div id="main">
-        <ol>
-        
-        {
-
-this.cityList.map(e => {
-  let val = `location${++k}`;
-    return e.country == 'India' && <li key={val}>{e.name}</li> 
-})
-         
-            }
-        </ol>
+        <ol>{<List List={this.cityList}/>}</ol>
       </div>
     )
   }
