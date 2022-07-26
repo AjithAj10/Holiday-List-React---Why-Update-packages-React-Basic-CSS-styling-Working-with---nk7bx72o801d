@@ -45,7 +45,8 @@ class App extends Component {
 // let k =0;
     return (
       <div id="main">
-        <ol>{<List List={this.cityList}/>}</ol>
+        <ol><li key='location0'>goa</li>
+          {<List List={this.cityList}/>}</ol>
       </div>
     )
   }
