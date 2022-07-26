@@ -36,13 +36,15 @@ class App extends Component {
     { name: 'Mount Abu', country: 'India' },
     { name: 'Tirupati', country: 'India' },
     ]
+    
   }
-
   render() {
     return (
       <div id="main">
         <ol>
-          <List city={this.cityList}/>
+        {
+         <List List={this.cityList}/>
+            }
         </ol>
       </div>
     )
