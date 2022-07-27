@@ -6,9 +6,12 @@ function List(props) {
     return (
         <>
             {
-                props.List.map(e => {
-                  let val = `location${++k}`;
-                    return e.country == 'India' && <li key={val}>{e.name}</li> 
+                props.List.filter(e => {
+  
+                    return e.country === 'India';
+                }).map(e => {
+                    let val = `location${++k}`;
+                    return <li key={val}>{e.name}</li>
                 })
             }
         </>
